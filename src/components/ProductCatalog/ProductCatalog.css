@@ -1,0 +1,30 @@
+.catalog {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  background: white;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #007bff;
+  color: white;
+}
