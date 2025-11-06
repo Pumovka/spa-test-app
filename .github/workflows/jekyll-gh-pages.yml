@@ -35,7 +35,7 @@ jobs:
         with:
             node-version: '22.19.0'
       - run: npm ci
-      - run: npm build
+      - run: npm run build
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
@@ -55,4 +55,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - run: npm run
+      - run: npm run start
